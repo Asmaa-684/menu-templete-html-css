@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;}
+    body{
+    background-color:lavender;
+}
+/*خاص باول لينك*/
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image:url(img/hamburger.jpg);
+    background-position:center ;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+}
+/*خاص بلينكات اللى فى الشمال */
+    nav{
+        display: flex;
+        padding: 5% 7%;
+        justify-content: space-between;
+        align-items: center; 
+        
+    }
+    .nav-links{
+        flex: 1;
+        text-align: right;  
+    }  
+    .nav-links ul li 
+    {
+        list-style: none;
+        display : inline-block;
+        padding: 8px 10px;
+        position: relative;
+        text-decoration:none;
+        color:black;
+        font-size: medium;
+        text-align: right;
+    }
+   /*خاص بالكلام اللى ع الصورة */
+.text-box{
+    width: 100%;
+    color: black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform :translate(-50%,-50%);
+    text-align: left;
+}
+.text-box h1{
+    font-size: 50px ;
+    text-align: left;
+}
+.text-box p{
+    margin: 40px;
+    font-size: medium;
+    color: black;
+}
+.visit-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 24px;
+    font-size: 15px;
+    position: relative;
+    cursor:grab;
+}
+.visit-btn:hover{
+    border: 3px solid rgb(184, 184, 218);
+    background: lavender;
+    transition: 1s;
+}
+nav.fa{
+    display: none;
+}
+/*عشان لما اصغر الصفحة */
+@media(max-width: 700px)
+{
+    .text-box h1{
+    font-size: 20px ;
+}
+.nav-links ul li{
+    display: block;
+}
+.nav-links
+{
+    position:absoult;
+    background: lavender;
+    height: 100vh;
+    width: -200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 3;
+}
+}
+
+nav.fa{
+    display:block;
+    color: wheat;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+/*about code*/
+.about {
+    width: 80%;
+   margin: auto;
+   text-align: left;
+   padding-top: 40px;
+   text-align: center;
+   
+}
+.about-col{
+    flex-basis: 20%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+   
+}
+
+.about-col img{
+
+    width: 100%;
+    
+}
+
+
+ h1{
+    font-size: larger;
+    font-weight: 600;
+    color:black;
+    text-align: center;
+}
+ h4{
+    font-size: large;
+    font-weight: 400px;
+    color:black;
+    text-align: center;
+    
+}
+ p{
+    font-size: small;
+    font-style: italic;
+    color:black;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  display: inline;
+}
+/*menu code*/
+.menu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color:black;
+    padding-top: 100px;
+
+}
+.menu-col{
+    flex-basis:20%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.menu-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.menu-col p{
+    padding: 0;
+}
+.menu-col h2{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: blue;
+}
+/*contact code*/
+.contact{
+    width: 100%;
+   text-align: left;
+   padding: 100px;
+   background-image: url(img/images\ \(3\).jpg);
+   background-position: left;
+   background-size: cover;
+   border-radius: 10px;
+}
+h2{
+    font-size: larger;
+    font-weight: 400px;
+    color: black;
+    text-align: left;
+    padding: 15px;
+    
+}
+ p{
+    font-size: medium;
+    font-style:normal;
+    color:black;
+  padding: 30px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  display: inline;
+}
+h3{
+    font-size: larger;
+    font-weight: 400px;
+    color:black;
+    text-align: left;
+    padding: 20px;
+}
+/*الكلام بتاع العنوان والاتصال*/
+.Data{
+    width: 100%;
+   text-align: center;
+   padding-top: 100px;
+   background-color:lavender;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 10px;
+}
+h2{
+    font-size: larger;
+    font-weight: 400px;
+    color: blue;
+    text-align: left;
+padding: 15px;
+}
+h3{
+    font-size: larger;
+    font-weight: 400px;
+    color: blue;
+    text-align: left;
+padding: 15px;
+}
+p{
+    font-size: larger;
+    font-weight: 400px;
+    color: black;
+    text-align: left;
+padding: 15px;
+}
+/*form code*/
+form{
+    font-size: medium;
+    font-style:normal;
+    color:black;
+  padding: 50px;
+  width: 100px;
+  height: 200px;
+  text-align: center;
+  display: inline;
+}/*footer code*/
+.footer{
+    font-weight: 600;
+    text-align: center;
+    background-color: lavender;
+    background-size: cover;
+    width: 100%;
+    font-size: large;
+   padding-top: 100px;
+   background-position: center;
+   border-radius: 10px;
+}
+
+h1{
+    font-size: larger;
+    font-weight: 400px;
+    color: black;
+    text-align: center;
+    padding: 35px;
+}
+p{
+    font-size: medium;
+    font-style:italic;
+  padding: 35px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: inline;
+}
